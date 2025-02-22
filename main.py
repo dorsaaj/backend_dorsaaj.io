@@ -20,7 +20,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dorsaaj.github.io"],  # Allow GitHub Pages frontend
+    allow_origins=["*"],  # Allow GitHub Pages frontend
     allow_credentials=True,
     allow_methods=["POST"],  # Only allow POST requests
     allow_headers=["*"], 
