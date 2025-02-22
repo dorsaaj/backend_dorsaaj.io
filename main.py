@@ -20,7 +20,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with your frontend URL for production
+    allow_origins=["https://dorsaaj.github.io/contactMe"],  # Replace with your frontend URL for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
