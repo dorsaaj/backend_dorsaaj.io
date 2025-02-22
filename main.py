@@ -20,10 +20,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dorsaaj.github.io/contactMe"],  # Replace with your frontend URL for production
+    allow_origins=["https://dorsaaj.github.io"],  # Allow GitHub Pages frontend
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["POST"],  # Only allow POST requests
+    allow_headers=["*"], 
 )
 
 # SQLAlchemy setup
